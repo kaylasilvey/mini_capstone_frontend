@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Login from "./views/Login.vue";
 import Signup from "./views/Signup.vue";
 import Logout from "./views/Logout.vue";
+import New from "./views/New.vue";
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       component: Login
     },
     { path: "/signup", name: "signup", component: Signup },
-    { path: "/logout", name: "logout", component: Logout }
+    { path: "/logout", name: "logout", component: Logout },
+    {
+      path: "/new",
+      name: "New",
+      component: New
+    }
   ]
 });
